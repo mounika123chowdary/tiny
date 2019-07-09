@@ -18,6 +18,7 @@ print(ids)
 browser = webdriver.Chrome("C:\\Users\\ACER\\Downloads\\chromedriver_win32\\chromedriver.exe")
 browser.get("http://intranet.rguktn.ac.in/SMS/")
 current_ids = []
+flag = 0
 for i in range(1,len(ids)):
         try:
                 ID = browser.find_element_by_id("user1")
